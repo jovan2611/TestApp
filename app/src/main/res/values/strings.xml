@@ -5,8 +5,11 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
 
+<<<<<<< HEAD
 
     <string name="stringTest">Č č Ć ć Đ đ Š š Ž ž</string>
 
 
+=======
+>>>>>>> origin/master
 </resources>
