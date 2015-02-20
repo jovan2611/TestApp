@@ -20,4 +20,15 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
+    <Button
+        android:id="@+id/btnKul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnTest"
+        android:layout_alignLeft="@id/btnTest"
+        android:layout_alignRight="@+id/btnTest"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:text="Kul"/>
+
 </RelativeLayout>

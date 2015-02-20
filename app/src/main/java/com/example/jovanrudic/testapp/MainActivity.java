@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -12,12 +14,13 @@ import android.widget.TextView;
 public class MainActivity extends ActionBarActivity {
 
     TextView proba;
+    Button btnKul;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        btnKul = (Button) findViewById(R.id.btnKul);
         proba = (TextView) findViewById(R.id.tvTest);
 
         Button but = (Button) findViewById(R.id.btnTest);
@@ -25,9 +28,14 @@ public class MainActivity extends ActionBarActivity {
         but.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                proba.setText("Testiranje");
+                //proba.setText("Testiranje");
+                Animation animation = AnimationUtils.loadAnimation(getApplication(), R.anim.fall_from_the_sky);
+                btnKul.startAnimation(animation);
+                btnKul.setVisibility(View.VISIBLE);
             }
         });
+
+
     }
 
 
